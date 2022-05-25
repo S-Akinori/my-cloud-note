@@ -35,7 +35,7 @@ const Home = ({docs}: Props) => {
           <h1 className='text-center'>My NoteBook</h1>
           <div className='text-center'>マイノート</div>
           <div className='text-center'>
-            <a href='https://github.com/S-Akinori/my-notebook' target="_blank">GitHub</a>にpushしたマークダウンドキュメントが見れます
+            <a href='https://github.com/S-Akinori/my-notebook' target="_blank" rel="noreferrer">GitHub</a>にpushしたマークダウンドキュメントが見れます
           </div>
         </div>
         <div className='container py-8 mx-auto'>
