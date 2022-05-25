@@ -1,16 +1,124 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --base-background: #FCFCFC;
+  --base-text-color: #080D1B;
+  --main-color: #F73117;
+  --max-width: 1280px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--base-background);
+  color: var(--base-text-color);
+  line-height: 1.75;
+  letter-spacing: 0.2em;
+  overflow-x: hidden;
+  max-width: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Arial", "Meiryo", sans-serif;
 }
-
+main {
+  padding-bottom: 3rem;
+}
+video {
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  padding-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #337ab7;
+  transition: 300ms;
+}
+a:hover {
+  opacity: 0.8;
+}
+img {
+  max-width: 100%;
 }
 
-* {
-  box-sizing: border-box;
+button:disabled {
+  background: #acacac;
+  color: #FFF;
+}
+button:disabled:hover {
+  background: #acacac;
+  color: #FFF;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+ul li {
+  list-style-type: disc;
+  padding: 0.5rem 0;
+}
+
+input, textarea {
+  display: block;
+  background: #FFF;
+  padding: 0.5rem;
+  color: #333;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.ttl-wrapper {
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--main-color);
+}
+.title_en {
+  font-size: 4rem;
+  font-family: 'Courgette', cursive;
+}
+.d-pc {
+  display: block;
+}
+.d-sp {
+  display: none;
+}
+.font-en {
+  font-family: 'Courgette', cursive;
+}
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+  .title_en {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.175rem;
+  }
+  .d-pc {
+    display: none;
+  }
+  .d-sp {
+    display: block;
+  }
 }

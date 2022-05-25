@@ -1,0 +1,50 @@
+.markdown {
+  padding: 2rem 0;
+}
+
+.markdown h1 {
+  border-bottom: 1px solid var(--base-text-color);
+  margin-bottom: 2rem;
+  color: #7b7b7b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.markdown h2 {
+  padding: 1rem 0 1rem 1rem;
+  border-left: 3px solid var(--main-color);
+  margin: 3rem 0 1rem;
+  background: #f7f7f7;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.markdown h3 {
+  padding: .5rem 0 .5rem .5rem;
+  border-left: 3px solid var(--main-color);
+  margin: 3rem 0 1rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.markdown ul, .markdown ol {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #f5f5dc;
+}
+
+
+@media screen and (min-width: 768px) {
+  .markdown h1 {
+    font-size: 2rem;
+  }
+  
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown h3 {
+    font-size: 1.25rem;
+  }
+}
