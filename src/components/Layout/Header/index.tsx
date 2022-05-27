@@ -25,6 +25,7 @@ const Header = () => {
         method: 'POST'
       })
       if(res.ok) {
+        setLoading(false)
         setBtnText('同期しました')
         setTimeout(() => {
           setBtnText('同期')
